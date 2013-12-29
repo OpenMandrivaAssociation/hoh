@@ -4,7 +4,7 @@
 
 Name:		hoh
 Version:	1.01
-Release:	%mkrel 1
+Release:	2
 Summary:	Remake of the 80's 8-bit classic game Head over Heels
 Group:		Games/Arcade
 License:	Freeware
