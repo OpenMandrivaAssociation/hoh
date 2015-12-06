@@ -37,9 +37,9 @@ EOF
 %__chmod 755 %{buildroot}%{_bindir}/%{name}
 
 # game files
-%__mkdir_p %{buildroot}%{_libdir}/%{name}
-%__cp -af %{name}-install-%{version}/data/* %{buildroot}%{_libdir}/%{name}/
-%__cp -af %{name}-update-%{version}/data/HoH %{buildroot}%{_libdir}/%{name}/
+mkdir -p %{buildroot}%{_libdir}/%{name}
+cp -raf %{name}-install-%{version}/data/* %{buildroot}%{_libdir}/%{name}/
+cp -raf %{name}-update-%{version}/data/HoH %{buildroot}%{_libdir}/%{name}/
 
 # icons
 for N in 16 32 64 128; do
@@ -64,11 +64,7 @@ Type=Application
 Categories=Game;ArcadeGame;
 EOF
 
-%clean
-%__rm -rf %{buildroot}
-
 %files
-%defattr(644,root,root,755)
 %doc %{name}-install-%{version}/docs %{name}-install-%{version}/readme.txt
 %attr(755,root,root) %{_bindir}/%{name}
 %dir %{_libdir}/%{name}
