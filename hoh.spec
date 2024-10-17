@@ -8,7 +8,7 @@ Release:	3
 Summary:	Remake of the 80's 8-bit classic game Head over Heels
 Group:		Games/Arcade
 License:	Freeware
-URL:		http://retrospec.sgn.net/game/hoh
+URL:		https://retrospec.sgn.net/game/hoh
 Source0:	http://retrospec.sgn.net/games/hoh/bin/hohlin-101.tar.bz2
 Source1:	http://retrospec.sgn.net/games/hoh/bin/hoh-update-101.tar.bz2
 Source2:	%{name}.png
